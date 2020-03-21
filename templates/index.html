@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename = 'stylesheets/index.css') }}">
+        <title>Corona Live Count</title>
+    </head>
+    <body>
+        <h1 id="heading">Corona Count</h1>
+        <div>
+            <h4>confirmed Cases : {{ confirmed }}</h4>
+            <h4>Active Cases : {{ active }}</h4>
+            <h4>Deaths : {{ Deaths }}</h4>
+            <h4>Recovered : {{ Recovered }}</h4>
+        </div>
+    </body>
+</html>
