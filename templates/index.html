@@ -2,9 +2,11 @@
 <html lang="eng">
     <head>
         <link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename = 'stylesheets/index.css') }}">
+        <script src="{{url_for('static', filename='stylesheets/index.js')}}"></script>
         <title>Corona Live Count</title>
         <!-- fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+        
 
     </head>
     <body>
@@ -23,12 +25,12 @@
         <br>
         <br>
         <br>
-
         <div class="databox">
             <h4>Confirmed Cases : {{ confirmed }}</h4>
             <h4>Active Cases : {{ active }}</h4>
             <h4>Deaths : {{ Deaths }}</h4>
             <h4>Recovered : {{ Recovered }}</h4>
+        <button onclick ="{{ url_for('/button_press/') }}" >Click me</button>
         </div>
     </body>
 </html>

@@ -34,14 +34,14 @@ body
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather';
     color:gray;
     font-size: 28px;
     font-weight: bold;
 
 }
 
-.databox > h4{
+.databox > h4, .databox > button{
     background:#117A65;
     color:#D1F2EB;
     margin-top: 1rem;
@@ -49,6 +49,7 @@ body
     padding: .4rem .7rem;
     border-radius: 15px;
     box-shadow: 2px 3px 2px 3px;
+    cursor: pointer;
 }
 
 .selbox > select, .selbox > select > option{
