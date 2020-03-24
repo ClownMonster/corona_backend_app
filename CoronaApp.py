@@ -14,13 +14,6 @@ def index():
     return render_template('index.html',confirmed= counter['confirmed'], active = counter['active'],
                                         Recovered = counter['recovered'], Deaths = counter['deaths'])
 
-@app.route('/button_press/')
-def button_press():
-    global data_req_country
-    data_req_country = 'italy'
-    return('')
-
-
 if __name__ == '__main__':
     app.run(debug = True)
 

@@ -7,29 +7,15 @@
         <!-- fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
         
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            
+        <!--meta tags-->
+        <meta name="viewport " content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     </head>
     <body>
-        <div id="heading">
-            <h1>Corona Count</h1>
-        </div>
-        <div class="selbox">
-            <select name="" id="">
-                <option value="">Select Your Country</option>
-                <option value="">India</option>
-                <option value="">Italya</option>
-                <option value="">Europe</option>
-                <option value="">England</option>
-            </select>
-        </div>
-        <br>
-        <br>
-        <div class="databox">
-            <h4>Confirmed Cases : {{ confirmed }}</h4>
-            <h4>Active Cases : {{ active }}</h4>
-            <h4>Deaths : {{ Deaths }}</h4>
-            <h4>Recovered : {{ Recovered }}</h4>
-        <button onclick ="{{ url_for('/button_press/') }}" >Click me</button>
-        </div>
+       
     </body>
 </html>
