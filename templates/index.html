@@ -6,16 +6,52 @@
         <title>Corona Live Count</title>
         <!-- fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
         
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
                 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            
+        <script src="https://kit.fontawesome.com/bd81c4ab1e.js" crossorigin="anonymous"></script>
         <!--meta tags-->
         <meta name="viewport " content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     </head>
     <body>
-       
+       <div class="header">
+           <h1>Corona Live Count</h1>
+       </div>
+       <br>
+       <br>
+       <form class="search-bar">
+        <input  type="text" placeholder="Search Country">
+           
+       </form>
+       <br>
+       <br>
+       <div class="container">
+           <div>Country : {{ country }}</div>
+            <div>Confirmed : {{ confirmed }}</div>
+            <div>Active : {{ active }}</div>
+            <div>Recovered : {{ Recovered }}</div>
+            <div>Deaths : {{ Deaths }}</div>
+            <div></div>
+       </div>
+       <br>
+       <br>
+       <footer>
+            <h1>footer contents</h1>
+       </footer>
+    <!-- Additionals for jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     </body>
 </html>
