@@ -18,11 +18,14 @@ def index():
 @app.route("/testfun", methods = ['GET', 'POST'])
 def testfun():
     global data_req_country
-    if request.method == 'POST':
-        data_req_country = request.form["udata"]
-    counter = covobj.get_status_by_country_name(data_req_country)
-    return render_template('index.html', confirmed=counter['confirmed'], active=counter['active'],
-                           Recovered=counter['recovered'], Deaths=counter['deaths'], country=data_req_country)
+    try:
+        if request.method == 'POST':
+            data_req_country = request.form["udata"]
+        counter = covobj.get_status_by_country_name(data_req_country)
+        return render_template('index.html', confirmed=counter['confirmed'], active=counter['active'],
+                            Recovered=counter['recovered'], Deaths=counter['deaths'], country=data_req_country)
+    except:
+        return render_template('index.html', country = 'Not found')
 
 if __name__ == '__main__':
     app.run(debug = True)
