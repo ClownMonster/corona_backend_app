@@ -15,8 +15,8 @@ def index():
     counter = covobj.get_status_by_country_name(data_req_country)
     return render_template('index.html',confirmed= counter['confirmed'], active = counter['active'],
                                         Recovered = counter['recovered'], Deaths = counter['deaths'], country = data_req_country )
-@app.route("/testfun", methods = ['GET', 'POST'])
-def testfun():
+@app.route("/search_country", methods = ['GET', 'POST'])
+def search_country():
     global data_req_country
     try:
         if request.method == 'POST':
