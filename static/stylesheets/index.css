@@ -69,7 +69,7 @@ footer > p{
 
 .search-bar > input
 {
-    display: inline;
+    display: flex;
     justify-content: left;
     padding-left: 4rem;
     width: 30rem;
