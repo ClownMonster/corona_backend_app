@@ -7,7 +7,9 @@
 }
 
 body{
-    background:url("../p1.jpg") no-repeat;
+
+    /*background:url("../p1.jpg") no-repeat;*/
+    background: black;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -21,8 +23,9 @@ body{
     font-size: 32px;
     font-family: 'Roboto Mono';
     padding: 2rem 0rem;
-    background-color: black;
+    background-color:#0b0e28;
     color: chartreuse;
+    opacity: 0.8;
 }
 
 .container{
@@ -34,7 +37,7 @@ body{
 .container > div{
     width: 15rem;
     height: 8rem;
-    background-color:#1C2833;
+    background-color:#0b0e28;
     color: aliceblue;
     display: flex;
     justify-content: center;
@@ -54,17 +57,18 @@ footer
 {
     font-size: 32px;
     font-family: 'Roboto Mono';
-    padding: 2rem 0rem;
-    background-color: black;
+    background-color: #0b0e28;
     color: chartreuse;
-    height: 10rem;
     display: flex;
     justify-content: center;
+    height: 6rem;
+
 }
 
 footer > p{
     font-size: 20px;
     font-weight: 600;
+    opacity: 1;
 }
 
 .search-bar > input
@@ -75,11 +79,10 @@ footer > p{
     width: 30rem;
     height: 3rem;
     line-height: 3px;
-    border:3px solid black;
-    border-radius: 22px;
-    background-color:#CB4335;
-    color: wheat;
+    background-color:#cacfd2;
+    color:black;
     text-transform: capitalize;
+
 }
 
 .search-bar{
@@ -91,6 +94,6 @@ footer > p{
 }
 
 ::placeholder{
-    color:white;
+    color:#313036;
     opacity: 1;
 }
